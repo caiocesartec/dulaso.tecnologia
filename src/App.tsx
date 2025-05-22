@@ -23,13 +23,14 @@ function App() {
   return (
     <>
       <header className="headerImprovisado">
-        <h1>
-          Nome de testeNome de testeNome de testeNome de testeNome de testeNome
-          de testeNome de testeNome de testeNome de testeNome de testeNome de
-          testeNome de testeNome de testeNome de testeNome de testeNome de
-          testeNome de testeNome de testeNome de testeNome de testeNome de
-          testeNome de testeNome de testeNome de teste
-        </h1>
+        <p>
+          teste mobteste mobteste mobteste mobteste mobteste mobteste mobteste
+          mobteste mobteste mobteste mobteste mobteste mobteste mobteste
+          mobteste mobteste mobteste mobteste mobteste mobteste mobteste
+          mobteste mobteste mobteste mobteste mobteste mobteste mobteste
+          mobteste mobteste mobteste mobteste mobteste mobteste mobteste
+          mobteste mobteste mobteste mobteste mob
+        </p>
       </header>
       <div>
         <a href="https://vite.dev" target="_blank">
