@@ -35,6 +35,13 @@ function App() {
           impulsionam resultados, otimizam processos e aproximam pessoas. Cresça
           com quem valoriza suas raízes e acredita no seu futuro.
         </h1>
+        <a href="/" target="_blank">
+          <img
+            src={"/logos/dulaso/logoDulaso.svg"}
+            className="logo"
+            alt="Dulaso logo"
+          />
+        </a>
       </main>
     </>
   );
