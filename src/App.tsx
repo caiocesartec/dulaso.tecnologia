@@ -1,8 +1,9 @@
 import { useEffect } from "react";
-
 import "./App.css";
+import Header from "./components/Header/Header.tsx";
+import DisplayCall from "./components/DisplayCall/DisplayCall.tsx";
 
-function App() {
+export default function App() {
   useEffect(() => {
     const isMobile = /Mobi|Android|iPhone|iPad|iPod|Windows Phone/i.test(
       navigator.userAgent
@@ -19,17 +20,13 @@ function App() {
 
   return (
     <>
-      <main className="mainImprovisado">
-        <a href="/" target="_blank">
-          <img
-            src={"/logos/dulaso/logoDulaso.svg"}
-            className="logo"
-            alt="Dulaso logo"
-          />
-        </a>
-      </main>
+      <Header />
+
+      <DisplayCall />
+
+      <footer>
+        <p>Meu Footer</p>
+      </footer>
     </>
   );
 }
-
-export default App;
