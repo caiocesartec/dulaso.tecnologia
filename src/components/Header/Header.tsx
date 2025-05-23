@@ -6,13 +6,13 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <a href="">Sobre</a>
+            <p>Sobre</p>
           </li>
           <li>
-            <a href="">Valores</a>
+            <p>Valores</p>
           </li>
           <li>
-            <a href="">Serviços</a>
+            <p>Serviços</p>
           </li>
         </ul>
       </nav>

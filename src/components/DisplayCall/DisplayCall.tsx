@@ -1,7 +1,9 @@
+import "./DisplayCall.css";
+
 export default function DisplayCall() {
   return (
     <>
-      <main className="mainImprovisado">
+      <main className="displayCallFull">
         <a href="/" target="_blank">
           <img
             src="/logos/dulaso/logoDulaso.svg"
