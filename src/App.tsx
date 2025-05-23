@@ -30,11 +30,11 @@ export default function App() {
       <TitleBar titulo="Sobre" />
       <About />
 
-      <TitleBar titulo="Valores" />
+      {/* <TitleBar titulo="Valores" />
       <Goods />
 
       <TitleBar titulo="Serviços" />
-      <Services />
+      <Services /> */}
       <footer>
         <p>Meu Footer</p>
       </footer>
