@@ -18,5 +18,11 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  background-color: rgb(186, 100, 100);
+}
+
+#root {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }

@@ -20,13 +20,26 @@ function App() {
   return (
     <>
       <main className="mainImprovisado">
-        <a href="/" target="_blank">
+        <p>
+          {" "}
+          testes testes testes testes testes testes testes testes testes testes
+          testes testes testes testes testes testes testes testes testes testes
+          testes testes testes testes testes testes testes testes testes testes
+          testes testes testes testes testes testes testes testes testes testes
+          testes testes testes testes testes testes testes testes testes testes
+          testes testes testes testes testes testes testes testes testes testes
+          testes testes testes testes testes testes testes testes testes testes
+          testes testes testes testes testes testes testes testes testes testes
+          testes testes testes testes testes testes testes testes testes testes
+          testes testes testes testes testes testes testes testes{" "}
+        </p>
+        {/* <a href="/" target="_blank">
           <img
             src={"/logos/dulaso/logoDulaso.svg"}
             className="logo"
             alt="Dulaso logo"
           />
-        </a>
+        </a> */}
       </main>
     </>
   );
