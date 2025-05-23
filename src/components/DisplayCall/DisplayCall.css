@@ -2,7 +2,9 @@
   color: #09bd54;
   background-color: #171910;
   width: 100%;
-  height: 100vh;
+  height: auto;
+  min-height: 70vh;
+  margin-top: 60px;
   display: flex;
   text-align: center;
 }
@@ -14,7 +16,7 @@
   margin: 0 auto;
   width: 100%;
   height: auto;
-  max-width: 320px;
+  max-width: 380px;
 }
 
 .displayCallFull a img {

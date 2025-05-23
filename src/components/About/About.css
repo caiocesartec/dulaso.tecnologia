@@ -1,0 +1,13 @@
+.sectionAbout {
+  background-color: #171910;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.sectionAbout p {
+  width: 768px;
+  font-size: 26px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  line-height: 40px;
+}

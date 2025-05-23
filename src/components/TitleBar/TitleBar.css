@@ -1,17 +1,20 @@
-section {
+.titleBar {
   background-color: #171910;
   padding: 0;
   margin: 0 auto;
   width: 100%;
   border-top: solid white 2px;
   border-bottom: solid white 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-section h2 {
+.titleBar h2 {
   display: block;
   text-align: center;
   line-height: 80px;
-  font-size: 30px;
+  font-size: 60px;
   color: white;
   text-decoration: none;
   font-family: sans-serif;
