@@ -27,21 +27,6 @@ function App() {
             alt="Dulaso logo"
           />
         </a>
-        <h1>
-          Dulaso Tecnologia nasce da união de Dudu, Laurinha e Sônia — uma
-          homenagem à família que inspira nossa missão. Com propósito e
-          inovação, viemos para impactar seu crescimento por meio da
-          transformação digital. Oferecemos soluções tecnológicas que
-          impulsionam resultados, otimizam processos e aproximam pessoas. Cresça
-          com quem valoriza suas raízes e acredita no seu futuro.
-        </h1>
-        <a href="/" target="_blank">
-          <img
-            src={"/logos/dulaso/logoDulaso.svg"}
-            className="logo"
-            alt="Dulaso logo"
-          />
-        </a>
       </main>
     </>
   );
