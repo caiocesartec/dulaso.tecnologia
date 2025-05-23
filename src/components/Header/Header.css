@@ -51,8 +51,6 @@
 }
 @media (max-width: 768px) {
   .headerPrincipal nav ul li p {
-    display: block;
-    text-align: center;
     line-height: 60px;
     padding-bottom: 5px;
     font-size: 30px;

@@ -11,8 +11,10 @@ export default function TitleBar({ titulo }: TitleBarProps) {
     <section className="titleBar">
       <FontAwesomeIcon
         icon={faTerminal}
-        style={{ color: "#04F46B", fontSize: "50px", marginRight: "10px" }}
+        className="iconeTitleBar"
+        style={{ color: "#04F46B", marginRight: "10px" }}
       />
+
       <h2>{titulo}</h2>
     </section>
   );
