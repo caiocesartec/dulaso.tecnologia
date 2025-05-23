@@ -9,10 +9,7 @@ import {
 // Import Swiper core and required modules
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
+import "swiper/swiper-bundle.css";
 
 const Goods: React.FC = () => {
   return (
