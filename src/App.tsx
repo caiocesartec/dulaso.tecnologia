@@ -4,8 +4,8 @@ import Header from "./components/Header/Header.tsx";
 import DisplayCall from "./components/DisplayCall/DisplayCall.tsx";
 import TitleBar from "./components/TitleBar/TitleBar.tsx";
 import About from "./components/About/About.tsx";
-import Goods from "./components/Goods/Goods.tsx";
-import Services from "./components/Services/Services.tsx";
+// import Goods from "./components/Goods/Goods.tsx";
+// import Services from "./components/Services/Services.tsx";
 
 export default function App() {
   useEffect(() => {
