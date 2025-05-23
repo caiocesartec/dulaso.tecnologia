@@ -1,4 +1,4 @@
-import "./goods.css";
+import "./Goods.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBullseye,
