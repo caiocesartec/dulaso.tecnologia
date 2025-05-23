@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import "./App.css";
 import Header from "./components/Header/Header.tsx";
 import DisplayCall from "./components/DisplayCall/DisplayCall.tsx";
+import TitleBar from "./components/TitleBar/TitleBar.tsx";
 
 export default function App() {
   useEffect(() => {
@@ -23,7 +24,7 @@ export default function App() {
       <Header />
 
       <DisplayCall />
-
+      <TitleBar titulo="Sobre" />
       <footer>
         <p>Meu Footer</p>
       </footer>
