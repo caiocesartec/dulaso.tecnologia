@@ -45,3 +45,10 @@ body {
 .swiper-wrapper {
   align-items: center;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: var(--swiper-navigation-top-offset, 93%) !important;
+  width: 20px !important;
+}

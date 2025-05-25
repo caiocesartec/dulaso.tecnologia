@@ -6,9 +6,8 @@ import {
   faHandshake,
 } from "@fortawesome/free-solid-svg-icons";
 
-// Import Swiper core and required modules
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules"; // <-- IMPORTAR Navigation
 import "swiper/swiper-bundle.css";
 
 const Goods: React.FC = () => {
@@ -21,52 +20,24 @@ const Goods: React.FC = () => {
         pagination={{
           clickable: true,
         }}
+        navigation={{
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        }}
         breakpoints={{
           0: {
             slidesPerView: 1,
-            centeredSlides: false, // melhor UX para mobile
+            centeredSlides: false,
           },
           768: {
             slidesPerView: 2,
             centeredSlides: true,
           },
         }}
-        modules={[Pagination]}
+        modules={[Pagination, Navigation]} // <-- ADICIONAR Navigation AQUI
         className="mySwiper"
       >
-        <SwiperSlide>
-          <section className="box">
-            <FontAwesomeIcon
-              icon={faBullseye}
-              style={{ color: "#04F46B", fontSize: "34px" }}
-            />
-            <h3>Missão</h3>
-            <p>
-              Oferecer soluções tecnológicas acessíveis e inovadoras que
-              capacitem microempreendedores a{" "}
-              <strong>expandir seus negócios</strong>, aumentando sua
-              competitividade e presença digital de forma simples e eficiente.
-            </p>
-          </section>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <section className="box">
-            <FontAwesomeIcon
-              icon={faEye}
-              style={{ color: "#04F46B", fontSize: "34px" }}
-            />
-            <h3>Visão</h3>
-            <p>
-              Ser referência nacional em{" "}
-              <strong>transformação digital para microempreendedores</strong>,
-              promovendo <strong>inclusão tecnológica</strong> e impulsionando o{" "}
-              <strong>crescimento sustentável</strong> de pequenos e médios
-              negócios.
-            </p>
-          </section>
-        </SwiperSlide>
-
+        {" "}
         <SwiperSlide>
           <section className="box">
             <FontAwesomeIcon
@@ -98,10 +69,42 @@ const Goods: React.FC = () => {
             </ul>
           </section>
         </SwiperSlide>
+        <SwiperSlide>
+          <section className="box">
+            <FontAwesomeIcon
+              icon={faBullseye}
+              style={{ color: "#04F46B", fontSize: "34px" }}
+            />
+            <h3>Missão</h3>
+            <p>
+              Oferecer soluções tecnológicas acessíveis e inovadoras que
+              capacitem microempreendedores a{" "}
+              <strong>expandir seus negócios</strong>, aumentando sua
+              competitividade e presença digital de forma simples e eficiente.
+            </p>
+          </section>
+        </SwiperSlide>
+        <SwiperSlide>
+          <section className="box">
+            <FontAwesomeIcon
+              icon={faEye}
+              style={{ color: "#04F46B", fontSize: "34px" }}
+            />
+            <h3>Visão</h3>
+            <p>
+              Ser referência nacional em{" "}
+              <strong>transformação digital para microempreendedores</strong>,
+              promovendo <strong>inclusão tecnológica</strong> e impulsionando o{" "}
+              <strong>crescimento sustentável</strong> de pequenos e médios
+              negócios.
+            </p>
+          </section>
+        </SwiperSlide>
       </Swiper>
+
+      {/* Botões de navegação precisam estar fora do Swiper, mas dentro do DOM */}
       <div className="swiper-button-prev" />
       <div className="swiper-button-next" />
-      <section className="goodsSectionContainer"></section>
     </section>
   );
 };

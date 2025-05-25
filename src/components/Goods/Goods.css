@@ -18,10 +18,10 @@
 
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .goodsSection .box {
   min-width: 300px;
+  padding-bottom: 40px;
 }
 .goodsSection .box ul li {
   margin-bottom: 20px;
@@ -29,6 +29,8 @@
   letter-spacing: 2px;
   line-height: 30px;
   font-size: 22px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .goodsSection .box strong {
   color: #04f46b;
