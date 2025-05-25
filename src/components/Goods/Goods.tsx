@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules"; // <-- IMPORTAR Navigation
+import { Pagination, Navigation, Autoplay } from "swiper/modules"; // Importa Autoplay
 import "swiper/swiper-bundle.css";
 
 const Goods: React.FC = () => {
@@ -17,6 +17,10 @@ const Goods: React.FC = () => {
         slidesPerView={2}
         centeredSlides={true}
         spaceBetween={30}
+        autoplay={{
+          delay: 4000, // tempo entre os slides (ms)
+          disableOnInteraction: false, // continua mesmo após interação
+        }}
         pagination={{
           clickable: true,
         }}
@@ -34,10 +38,25 @@ const Goods: React.FC = () => {
             centeredSlides: true,
           },
         }}
-        modules={[Pagination, Navigation]} // <-- ADICIONAR Navigation AQUI
+        modules={[Pagination, Navigation, Autoplay]} // Inclui Autoplay
         className="mySwiper"
       >
-        {" "}
+        <SwiperSlide>
+          <section className="box">
+            <FontAwesomeIcon
+              icon={faBullseye}
+              style={{ color: "#04F46B", fontSize: "34px" }}
+            />
+            <h3>Missão</h3>
+            <p>
+              Oferecer soluções tecnológicas acessíveis e inovadoras que
+              capacitem microempreendedores a{" "}
+              <strong>expandir seus negócios</strong>, aumentando sua
+              competitividade e presença digital de forma simples e eficiente.
+            </p>
+          </section>
+        </SwiperSlide>
+
         <SwiperSlide>
           <section className="box">
             <FontAwesomeIcon
@@ -69,21 +88,7 @@ const Goods: React.FC = () => {
             </ul>
           </section>
         </SwiperSlide>
-        <SwiperSlide>
-          <section className="box">
-            <FontAwesomeIcon
-              icon={faBullseye}
-              style={{ color: "#04F46B", fontSize: "34px" }}
-            />
-            <h3>Missão</h3>
-            <p>
-              Oferecer soluções tecnológicas acessíveis e inovadoras que
-              capacitem microempreendedores a{" "}
-              <strong>expandir seus negócios</strong>, aumentando sua
-              competitividade e presença digital de forma simples e eficiente.
-            </p>
-          </section>
-        </SwiperSlide>
+
         <SwiperSlide>
           <section className="box">
             <FontAwesomeIcon
@@ -102,7 +107,7 @@ const Goods: React.FC = () => {
         </SwiperSlide>
       </Swiper>
 
-      {/* Botões de navegação precisam estar fora do Swiper, mas dentro do DOM */}
+      {/* Botões de navegação */}
       <div className="swiper-button-prev" />
       <div className="swiper-button-next" />
     </section>
