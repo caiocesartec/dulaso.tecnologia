@@ -26,3 +26,22 @@ body {
   height: auto;
   max-width: 100%;
 }
+
+/* Swipe Slider */
+.swiper-pagination-bullet {
+  border: solid 3px white;
+  opacity: 10;
+}
+.swiper-pagination-bullet-active {
+  background-color: #04f46b !important;
+  border: solid 3px white;
+}
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: var(--swiper-pagination-bottom, 30px) !important;
+}
+.swiper-wrapper {
+  align-items: center;
+}

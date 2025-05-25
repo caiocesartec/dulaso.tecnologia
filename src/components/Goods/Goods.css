@@ -6,10 +6,9 @@
   border-top: solid white 2px;
   border-bottom: solid white 2px;
   text-align: center;
-  /* display: flex; */
+  position: relative;
   justify-content: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  align-items: center;
 }
 .goodsSectionContainer {
   width: 100%;
@@ -19,8 +18,9 @@
   align-items: center;
 }
 .goodsSection .box {
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 40px;
+  margin-left: 40px;
+  min-width: 346px;
 }
 .goodsSection .box ul li {
   margin-bottom: 20px;
@@ -59,4 +59,15 @@
   font-style: normal;
   transform: translateY(4px);
   letter-spacing: 3px;
+}
+
+/* swiper slider */
+.goodsSection .swiper-horizontal {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.goodsSection .swiper-button-prev,
+.goodsSection .swiper-button-next {
+  color: #04f46b;
 }

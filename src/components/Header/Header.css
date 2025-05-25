@@ -30,14 +30,14 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 15%;
+  width: 4%;
 }
 
 .headerPrincipal nav ul li p {
   display: block;
   text-align: center;
-  line-height: 80px;
-  font-size: 60px;
+  line-height: 70px;
+  font-size: 35px;
   color: white;
   text-decoration: none;
   font-family: sans-serif;

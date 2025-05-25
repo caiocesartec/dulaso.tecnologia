@@ -18,9 +18,18 @@ const Goods: React.FC = () => {
         slidesPerView={2}
         centeredSlides={true}
         spaceBetween={30}
-        loop={true}
         pagination={{
           clickable: true,
+        }}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+            centeredSlides: false, // melhor UX para mobile
+          },
+          768: {
+            slidesPerView: 2,
+            centeredSlides: true,
+          },
         }}
         modules={[Pagination]}
         className="mySwiper"
@@ -90,7 +99,8 @@ const Goods: React.FC = () => {
           </section>
         </SwiperSlide>
       </Swiper>
-
+      <div className="swiper-button-prev" />
+      <div className="swiper-button-next" />
       <section className="goodsSectionContainer"></section>
     </section>
   );
