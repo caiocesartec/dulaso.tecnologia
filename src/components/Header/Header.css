@@ -55,4 +55,14 @@
     padding-bottom: 5px;
     font-size: 30px;
   }
+  .headerPrincipal nav ul li {
+    padding: 0;
+    margin: 0 1%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 9%;
+  }
 }
