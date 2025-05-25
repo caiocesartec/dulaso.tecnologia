@@ -9,18 +9,19 @@
   position: relative;
   justify-content: center;
   align-items: center;
+  min-width: 310px;
 }
 .goodsSectionContainer {
   width: 100%;
   max-width: 768px;
+  min-width: 310px;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .goodsSection .box {
-  margin-right: 40px;
-  margin-left: 40px;
-  min-width: 346px;
+  min-width: 300px;
 }
 .goodsSection .box ul li {
   margin-bottom: 20px;
