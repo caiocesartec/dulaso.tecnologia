@@ -69,10 +69,7 @@ const Goods: React.FC = () => {
                 <strong>Agilidade:</strong> Buscamos sempre soluções que
                 entreguem o maior valor possível no menor tempo viável.
               </li>
-              <li>
-                <strong>Compromisso:</strong> Trabalhamos com dedicação para o
-                sucesso dos microempreendedores.
-              </li>
+
               <li>
                 <strong>Acessibilidade:</strong> Tornamos a tecnologia simples e
                 disponível para todos.
