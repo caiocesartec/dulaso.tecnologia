@@ -67,7 +67,7 @@ const Goods: React.FC = () => {
             <ul>
               <li>
                 <strong>Agilidade:</strong> Buscamos sempre soluções que
-                entregam o maior valor possível no menor tempo viável.
+                entreguem o maior valor possível no menor tempo viável.
               </li>
               <li>
                 <strong>Compromisso:</strong> Trabalhamos com dedicação para o
@@ -77,10 +77,10 @@ const Goods: React.FC = () => {
                 <strong>Acessibilidade:</strong> Tornamos a tecnologia simples e
                 disponível para todos.
               </li>
-              <li>
+              {/* <li>
                 <strong>Ética:</strong> Atuamos com transparência, respeito e
                 responsabilidade.
-              </li>
+              </li> */}
               <li>
                 <strong>Parceria:</strong> Valorizamos relações de confiança e
                 colaboração duradouras.
