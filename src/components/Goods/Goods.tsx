@@ -19,7 +19,7 @@ const Goods: React.FC = () => {
         spaceBetween={30}
         autoplay={{
           delay: 4000, // tempo entre os slides (ms)
-          disableOnInteraction: false, // continua mesmo após interação
+          disableOnInteraction: true, // continua mesmo após interação
         }}
         pagination={{
           clickable: true,
