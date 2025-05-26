@@ -8,8 +8,8 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .servicesSectionContainer {
   width: 100%;
@@ -52,8 +52,6 @@
   font-weight: 800;
   font-style: normal;
   transform: translateY(4px);
-  margin-bottom: 45px;
-  margin-top: 45px;
 }
 .servicesSection strong {
   color: #04f46b;
