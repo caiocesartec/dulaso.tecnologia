@@ -42,9 +42,11 @@
 .goodsSection h3 {
   display: block;
   text-align: center;
-  line-height: 80px;
-  font-size: 50px;
-  letter-spacing: 2px;
+  line-height: 30px;
+  font-size: 30px;
+  margin-top: 18px;
+  margin-bottom: 23px;
+  letter-spacing: 9px;
   color: white;
   text-decoration: none;
   font-weight: 800;

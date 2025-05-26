@@ -8,10 +8,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 5px;
+  padding-bottom: 2px;
 }
 .titleBar .iconeTitleBar {
-  font-size: 45px;
+  font-size: 32px;
+  padding-right: 10px;
 }
 .titleBar h2 {
   display: block;
@@ -25,6 +26,7 @@
   font-weight: 400;
   font-style: normal;
   transform: translateY(4px);
+  letter-spacing: 9px;
 }
 
 @media (max-width: 768px) {

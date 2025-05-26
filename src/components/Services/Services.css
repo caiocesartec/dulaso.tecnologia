@@ -16,20 +16,44 @@
   max-width: 100%;
 }
 .servicesSectionContainer .box {
-  margin-right: 20px;
-  margin-left: 20px;
   margin: 0 auto;
-
   display: block;
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.servicesSectionContainer .box-web {
+  padding-top: 0px;
+}
+
+.service-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 .servicesSectionContainer .box ul li {
-  margin-bottom: 60px;
-  margin-top: 40px;
   font-size: 16px;
   letter-spacing: 2px;
   line-height: 30px;
   font-size: 22px;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-style: normal;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+.servicesSectionContainer .box-web ul li {
+  padding-top: 40px;
 }
 
 .servicesSectionContainer .box ul li strong {
@@ -44,32 +68,20 @@
 .servicesSection h3 {
   display: block;
   text-align: center;
-  line-height: 80px;
-  font-size: 45px;
-  letter-spacing: 2px;
+  line-height: 40px;
+  font-size: 35px;
+  letter-spacing: 10px;
   color: white;
   text-decoration: none;
   font-weight: 800;
   font-style: normal;
-  transform: translateY(4px);
+  transform: translateY(0px);
+  padding-left: 4%;
+  padding-right: 4%;
 }
 .servicesSection strong {
   color: #04f46b;
   font-size: 50px;
-}
-.servicesSection li {
-  display: block;
-  text-align: center;
-  font-size: 16px;
-  letter-spacing: 2px;
-  line-height: 30px;
-  font-size: 22px;
-
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  font-style: normal;
-  transform: translateY(4px);
 }
 
 .servicesSection .swiper-pagination-fraction,
@@ -77,4 +89,12 @@
 .servicesSection .swiper-horizontal > .swiper-pagination-bullets,
 .servicesSection .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: var(--swiper-pagination-bottom, 10px) !important;
+}
+
+@media (max-width: 768px) {
+  .servicesSection h3 {
+    line-height: 35px;
+    font-size: 30px;
+    letter-spacing: 10px;
+  }
 }

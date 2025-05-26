@@ -20,10 +20,12 @@ export default function Services() {
     <section className="servicesSection">
       <section className="servicesSectionContainer">
         <section className="box">
-          <strong> - </strong>
-          <h3>Manutenção de Computadores</h3>
+          <div className="service-title">
+            <strong> - </strong>
+            <h3>Manutenção de Computadores</h3>
 
-          <strong> - </strong>
+            <strong> - </strong>
+          </div>
           <ul>
             <Swiper
               slidesPerView={2}
@@ -116,10 +118,12 @@ export default function Services() {
           </ul>
         </section>
 
-        <section className="box">
-          <strong> - </strong>
-          <h3>Programação Web</h3>
-          <strong> - </strong>
+        <section className="box box-web">
+          <div className="service-title">
+            <strong> - </strong>
+            <h3>Programação Web</h3>
+            <strong> - </strong>
+          </div>
           <ul>
             <Swiper
               slidesPerView={2}
