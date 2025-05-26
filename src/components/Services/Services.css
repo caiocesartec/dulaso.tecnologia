@@ -14,17 +14,17 @@
 .servicesSectionContainer {
   width: 100%;
   max-width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: top;
 }
 .servicesSectionContainer .box {
   margin-right: 20px;
   margin-left: 20px;
-  max-width: 768px;
+  margin: 0 auto;
+
+  display: block;
+  width: 100%;
 }
 .servicesSectionContainer .box ul li {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   margin-top: 40px;
   font-size: 16px;
   letter-spacing: 2px;
@@ -72,4 +72,11 @@
   font-weight: 500;
   font-style: normal;
   transform: translateY(4px);
+}
+
+.servicesSection .swiper-pagination-fraction,
+.servicesSection .swiper-pagination-custom,
+.servicesSection .swiper-horizontal > .swiper-pagination-bullets,
+.servicesSection .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: var(--swiper-pagination-bottom, 10px) !important;
 }
