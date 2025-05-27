@@ -37,7 +37,7 @@ export default function Header() {
         }
       },
       {
-        threshold: 0.1, // 50% visível
+        threshold: 0.3, // 50% visível
       }
     );
 
