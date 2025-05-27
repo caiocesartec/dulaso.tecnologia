@@ -49,6 +49,11 @@
 .headerPrincipal nav ul li p strong {
   color: #04f46b;
 }
+
+.navButton.active {
+  color: #04f46b;
+}
+
 @media (max-width: 768px) {
   .headerPrincipal nav ul li p {
     line-height: 60px;
