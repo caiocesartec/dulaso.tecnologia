@@ -1,0 +1,23 @@
+.chat-bubble {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  padding: 8px 12px;
+  border-radius: 16px;
+  position: relative;
+  white-space: nowrap;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.chat-bubble::after {
+  content: "";
+  position: absolute;
+  right: -4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}

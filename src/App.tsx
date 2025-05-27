@@ -6,6 +6,7 @@ import TitleBar from "./components/TitleBar/TitleBar.tsx";
 import About from "./components/About/About.tsx";
 import Goods from "./components/Goods/Goods.tsx";
 import Services from "./components/Services/Services.tsx";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop.tsx";
 
 export default function App() {
   useEffect(() => {
@@ -39,6 +40,7 @@ export default function App() {
       <footer>
         <p>Meu Footer</p>
       </footer>
+      <ScrollToTop />
     </>
   );
 }
