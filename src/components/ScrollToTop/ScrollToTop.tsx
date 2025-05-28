@@ -38,9 +38,6 @@ const ScrollToTopButton = () => {
           gap: "8px",
         }}
       >
-        {/* Balão de texto */}
-        <div className="chat-bubble">FALE CONOSCO</div>
-
         {/* Botão WhatsApp */}
         <button
           onClick={openWhatsApp}
@@ -53,14 +50,7 @@ const ScrollToTopButton = () => {
           aria-label="WhatsApp"
           className="whatsapp-btn"
         >
-          <FontAwesomeIcon
-            icon={faWhatsapp}
-            style={{
-              color: "white",
-              fontSize: "60px",
-              zIndex: 9000,
-            }}
-          />
+          <img src="/logos/whatsapp.svg" className="logo" alt="Dulaso logo" />
         </button>
       </div>
 
