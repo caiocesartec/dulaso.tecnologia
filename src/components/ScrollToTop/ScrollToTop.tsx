@@ -30,7 +30,7 @@ const ScrollToTopButton = () => {
         style={{
           position: "fixed",
           top: "80px",
-          right: "30px",
+          right: "3%",
           zIndex: 9000,
           display: "flex",
           alignItems: "center",
