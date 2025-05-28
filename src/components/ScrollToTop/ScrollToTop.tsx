@@ -30,9 +30,9 @@ const ScrollToTopButton = () => {
       <div
         style={{
           position: "fixed",
-          bottom: "20px",
+          top: "80px",
           right: "30px",
-          zIndex: 1000,
+          zIndex: 9000,
           display: "flex",
           alignItems: "center",
           gap: "8px",
@@ -48,6 +48,7 @@ const ScrollToTopButton = () => {
             backgroundColor: "transparent",
             border: "none",
             cursor: "pointer",
+            zIndex: 9000,
           }}
           aria-label="WhatsApp"
           className="whatsapp-btn"
@@ -57,6 +58,7 @@ const ScrollToTopButton = () => {
             style={{
               color: "white",
               fontSize: "60px",
+              zIndex: 9000,
             }}
           />
         </button>
