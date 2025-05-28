@@ -20,65 +20,67 @@ const ScrollToTopButton = () => {
   };
 
   const openWhatsApp = () => {
-    window.open("https://wa.me/5599999999999", "_blank"); // Substitua pelo seu número
+    window.open("https://wa.me/5511981952008", "_blank"); // Substitua pelo seu número
   };
 
   return (
     <>
-      {/* Botão WhatsApp com balão "FALE CONOSCO" */}
-      <div
-        style={{
-          position: "fixed",
-          bottom: "10px",
-          right: "10px",
-          zIndex: 9000,
-          display: "flex",
-          alignItems: "center",
-          gap: "8px",
-        }}
-      >
-        {/* Botão WhatsApp */}
-        <button
-          onClick={openWhatsApp}
-          style={{
-            backgroundColor: "transparent",
-            border: "none",
-            cursor: "pointer",
-            zIndex: 9000,
-          }}
-          aria-label="WhatsApp"
-          className="whatsapp-btn"
-        >
-          <img src="/logos/whatsapp.svg" className="logo" alt="Dulaso logo" />
-        </button>
-      </div>
-
-      {/* Botão Scroll para o Topo */}
-      {isScrollVisible && (
-        <button
-          onClick={scrollToTop}
+      <section>
+        {/* Botão WhatsApp com balão "FALE CONOSCO" */}
+        <div
           style={{
             position: "fixed",
-            bottom: "90px", // acima do WhatsApp
-            right: "30px",
-            backgroundColor: "transparent",
-            border: "none",
-            cursor: "pointer",
-            zIndex: 1000,
+            bottom: "10px",
+            right: "10px",
+            zIndex: 9000,
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
           }}
-          aria-label="Voltar ao topo"
-          className="scroll-to-top-btn"
         >
-          <FontAwesomeIcon
-            icon={faArrowCircleUp}
+          {/* Botão WhatsApp */}
+          <button
+            onClick={openWhatsApp}
             style={{
-              color: "white",
-              fontSize: "54px",
-              animation: "floatUpDown 1.5s ease-in-out infinite",
+              backgroundColor: "transparent",
+              border: "none",
+              cursor: "pointer",
+              zIndex: 9000,
             }}
-          />
-        </button>
-      )}
+            aria-label="WhatsApp"
+            className="whatsapp-btn"
+          >
+            <img src="/logos/whatsapp.svg" className="logo" alt="Dulaso logo" />
+          </button>
+        </div>
+
+        {/* Botão Scroll para o Topo */}
+        {isScrollVisible && (
+          <button
+            onClick={scrollToTop}
+            style={{
+              position: "fixed",
+              bottom: "75px", // acima do WhatsApp
+              right: "11px",
+              backgroundColor: "transparent",
+              border: "none",
+              cursor: "pointer",
+              zIndex: 1000,
+            }}
+            aria-label="Voltar ao topo"
+            className="scroll-to-top-btn"
+          >
+            <FontAwesomeIcon
+              icon={faArrowCircleUp}
+              style={{
+                color: "white",
+                fontSize: "48px",
+                animation: "floatUpDown 1.5s ease-in-out infinite",
+              }}
+            />
+          </button>
+        )}
+      </section>
     </>
   );
 };
