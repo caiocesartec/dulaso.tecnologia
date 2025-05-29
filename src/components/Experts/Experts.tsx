@@ -40,7 +40,7 @@ export default function Experts() {
           <section>
             <img src="/experts/caio.png" className="logo" alt="Caio Timoteo" />
             <h3>Caio Timoteo</h3>
-            <h4>Programador Senior</h4>
+            <h4>Infra - Sistemas - E-commerce - Sites</h4>
           </section>
         </SwiperSlide>
         <SwiperSlide style={{ width: "auto" }}>
@@ -51,7 +51,7 @@ export default function Experts() {
               alt="Emerson Muniz"
             />
             <h3>Emerson Muniz</h3>
-            <h4>Programador Senior</h4>
+            <h4>E-commerce - Sistemas - Sites</h4>
           </section>
         </SwiperSlide>
         <SwiperSlide style={{ width: "auto" }}>
@@ -62,7 +62,7 @@ export default function Experts() {
               alt="Vinicius S. Alves"
             />
             <h3>Vinicius S. Alves</h3>
-            <h4>Programador Senior</h4>
+            <h4>ERP - Sistemas - Sites</h4>
           </section>
         </SwiperSlide>
 
@@ -74,7 +74,7 @@ export default function Experts() {
               alt="Bruno Feitosa"
             />
             <h3>Bruno Feitosa</h3>
-            <h4>Programador Pleno</h4>
+            <h4>E-commerce - Sites</h4>
           </section>
         </SwiperSlide>
 
@@ -86,7 +86,7 @@ export default function Experts() {
               alt="Arthur Felipe"
             />
             <h3>Arthur Felipe</h3>
-            <h4>Programador Pleno</h4>
+            <h4>E-commerce - Sites</h4>
           </section>
         </SwiperSlide>
       </Swiper>

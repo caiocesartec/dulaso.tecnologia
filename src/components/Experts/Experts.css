@@ -8,11 +8,10 @@
 }
 .mySwiperExperts .swiper-wrapper {
   padding-top: 30px;
-  padding-bottom: 90px;
+  padding-bottom: 75px;
   max-width: 900px;
 }
-.mySwiperExperts h3,
-.mySwiperExperts h4 {
+.mySwiperExperts h3 {
   letter-spacing: 2px;
   margin-bottom: 5px;
 }

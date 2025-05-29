@@ -9,6 +9,7 @@ import Services from "./components/Services/Services.tsx";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop.tsx";
 import Footer from "./components/Footer/Footer.tsx";
 import Experts from "./components/Experts/Experts.tsx";
+import Projects from "./components/Projects/Projects.tsx";
 
 export default function App() {
   useEffect(() => {
@@ -41,6 +42,10 @@ export default function App() {
 
       <TitleBar titulo="Especialistas" />
       <Experts />
+
+      <TitleBar titulo="Clientes" />
+      <Projects />
+
       <Footer />
       <ScrollToTop />
     </>

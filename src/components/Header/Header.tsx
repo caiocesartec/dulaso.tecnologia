@@ -41,6 +41,8 @@ export default function Header() {
       { id: "sectionAbout", label: "Sobre" },
       { id: "goodsSection", label: "Valores" },
       { id: "servicesSection", label: "Serviços" },
+      { id: "mySwiperExperts", label: "Especialistas" },
+      { id: "projectsDone", label: "Clientes" },
     ];
 
     const handleScroll = () => {
@@ -131,6 +133,40 @@ export default function Header() {
               }`}
             >
               Serviços
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <strong>-</strong>
+            </p>
+          </li>
+
+          <li>
+            <p
+              onClick={() => scrollToHeading("Especialistas")}
+              className={`navButton ${
+                activeItem === "Especialistas" ? "active" : ""
+              }`}
+            >
+              Especialistas
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <strong>-</strong>
+            </p>
+          </li>
+
+          <li>
+            <p
+              onClick={() => scrollToHeading("Clientes")}
+              className={`navButton ${
+                activeItem === "Clientes" ? "active" : ""
+              }`}
+            >
+              Clientes
             </p>
           </li>
 

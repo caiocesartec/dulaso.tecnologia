@@ -1,0 +1,27 @@
+.projectsDone {
+  background-color: #ebebeb;
+  border-top: solid #000000 2px;
+  border-bottom: solid #000000 2px;
+}
+.logoImgProjects {
+  width: 100%;
+  max-width: 200px;
+}
+.projectsDone .swiper-wrapper {
+  padding-bottom: 85px;
+  padding-top: 75px;
+}
+.projectsDone .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+.projectsLogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectsLogo h3 {
+  color: black;
+}

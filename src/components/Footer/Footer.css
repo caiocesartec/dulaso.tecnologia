@@ -9,6 +9,7 @@
   align-items: center;
   padding-top: 50px;
   padding-bottom: 50px;
+  border-top: solid #ffffff 2px;
 }
 
 .displayCallFullFooter a {
