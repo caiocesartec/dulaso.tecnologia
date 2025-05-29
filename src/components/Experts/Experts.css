@@ -1,0 +1,40 @@
+.mySwiperExperts {
+  width: 100%;
+  margin: 0 auto;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  border-bottom: solid white 2px;
+}
+.mySwiperExperts .swiper-wrapper {
+  padding-top: 30px;
+  padding-bottom: 90px;
+  max-width: 900px;
+}
+.mySwiperExperts h3,
+.mySwiperExperts h4 {
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+.mySwiperExperts h4 {
+  color: #04f46b;
+}
+
+.mySwiperExperts section {
+  max-width: 250px;
+  text-align: center;
+}
+.mySwiperExperts img {
+  width: 100%;
+  max-width: 250px;
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  border-radius: 1000px;
+  border: solid 4px white;
+  margin-bottom: 20px;
+}
+
+.mySwiperExperts .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
