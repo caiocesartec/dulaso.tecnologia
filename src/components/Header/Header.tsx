@@ -1,9 +1,25 @@
 import { useEffect, useState } from "react";
 import "./Header.css";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Header() {
   const [activeItem, setActiveItem] = useState("");
   const [shouldObserve, setShouldObserve] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const isNowMobile = window.innerWidth < 1024;
+      setIsMobile(isNowMobile);
+      if (!isNowMobile) setIsNavOpen(false); // fecha o menu ao ampliar
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const scrollToHeading = (text: string) => {
     setActiveItem(text);
@@ -13,14 +29,14 @@ export default function Header() {
     );
 
     if (target) {
-      const offset = window.innerHeight * 0.3; // 30% da altura da viewport
+      const offset = window.innerHeight * 0.3;
       const topOffset =
         target.getBoundingClientRect().top + window.scrollY - offset;
       window.scrollTo({ top: topOffset, behavior: "smooth" });
+      if (isMobile) setIsNavOpen(false); // fecha o menu após clique
     }
   };
 
-  // Detecta se scroll passou de 200px para ativar observadores
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY > 200) {
@@ -28,12 +44,10 @@ export default function Header() {
         window.removeEventListener("scroll", onScroll);
       }
     };
-
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Detecta o centro da tela e ativa o item, ou desativa se scroll estiver no topo (menos que 30%)
   useEffect(() => {
     if (!shouldObserve) return;
 
@@ -78,21 +92,64 @@ export default function Header() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Executa na montagem para atualizar o estado
+    handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, [shouldObserve]);
 
+  const openWhatsApp = () => {
+    window.open("https://wa.me/5511981952008", "_blank");
+  };
+
   return (
     <header className="headerPrincipal">
-      <nav>
+      <section className="headerActionButtons">
+        {isMobile && (
+          <>
+            <FontAwesomeIcon
+              icon={faWhatsapp}
+              onClick={openWhatsApp}
+              style={{
+                backgroundColor: "transparent",
+                border: "none",
+                cursor: "pointer",
+                zIndex: 9000,
+                color: "#04f46b",
+                height: "60px",
+                fontSize: "24px",
+                width: "34px",
+              }}
+            />
+
+            <button
+              onClick={() => setIsNavOpen((prev) => !prev)}
+              style={{
+                backgroundColor: "transparent",
+                border: "none",
+                cursor: "pointer",
+                zIndex: 9000,
+                marginLeft: "16px",
+                marginRight: "16px",
+                height: "60px",
+              }}
+              aria-label="Menu"
+            >
+              <FontAwesomeIcon
+                icon={isNavOpen ? faXmark : faBars}
+                style={{ color: "#04F46B", fontSize: "34px" }}
+              />
+            </button>
+          </>
+        )}
+      </section>
+
+      <nav className={`navMenu ${isNavOpen || !isMobile ? "open" : ""}`}>
         <ul>
           <li>
             <p>
               <strong>-</strong>
             </p>
           </li>
-
           <li>
             <p
               onClick={() => scrollToHeading("Sobre")}
@@ -101,13 +158,11 @@ export default function Header() {
               Sobre
             </p>
           </li>
-
           <li>
             <p>
               <strong>-</strong>
             </p>
           </li>
-
           <li>
             <p
               onClick={() => scrollToHeading("Valores")}
@@ -118,13 +173,11 @@ export default function Header() {
               Valores
             </p>
           </li>
-
           <li>
             <p>
               <strong>-</strong>
             </p>
           </li>
-
           <li>
             <p
               onClick={() => scrollToHeading("Serviços")}
@@ -135,13 +188,11 @@ export default function Header() {
               Serviços
             </p>
           </li>
-
           <li>
             <p>
               <strong>-</strong>
             </p>
           </li>
-
           <li>
             <p
               onClick={() => scrollToHeading("Especialistas")}
@@ -152,13 +203,11 @@ export default function Header() {
               Especialistas
             </p>
           </li>
-
           <li>
             <p>
               <strong>-</strong>
             </p>
           </li>
-
           <li>
             <p
               onClick={() => scrollToHeading("Clientes")}
@@ -169,7 +218,6 @@ export default function Header() {
               Clientes
             </p>
           </li>
-
           <li>
             <p>
               <strong>-</strong>

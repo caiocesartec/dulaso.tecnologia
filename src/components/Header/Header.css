@@ -10,6 +10,7 @@
   padding: 0;
   margin: 0 auto;
   width: 100%;
+  border-top: solid white 2px;
   border-bottom: solid white 2px;
 }
 
@@ -52,18 +53,61 @@
 .navButton.active {
   color: #04f46b;
 }
+.navMenu {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.4s ease-in-out;
+}
+
+.navMenu.open {
+  max-height: 500px; /* ajuste conforme o conteúdo */
+  opacity: 1;
+  transform: translateY(0);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: fixed;
+  margin-top: 60px;
+}
+
+.headerActionButtons {
+  text-align: right;
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
+  position: fixed;
+  background-color: #171910;
+  width: 100%;
+  border-bottom: solid white 2px;
+}
+
+/* Exemplo de estilos existentes */
+.headerPrincipal {
+  position: relative;
+}
+
+.navButton {
+  cursor: pointer;
+}
+
+.navButton.active {
+  color: #04f46b;
+  font-weight: bold;
+}
 
 @media (max-width: 768px) {
-  .headerPrincipal {
-    display: none;
+  .headerPrincipal nav ul {
+    flex-direction: column;
+    text-align: center;
   }
   .headerPrincipal nav ul li p {
-    line-height: 60px;
+    line-height: 20px;
     padding-bottom: 5px;
     font-size: 30px;
   }
   .headerPrincipal nav ul li {
-    width: 15%;
+    width: 100%;
   }
   .headerPrincipal nav ul li p {
     font-size: 25px;
