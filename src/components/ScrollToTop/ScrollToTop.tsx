@@ -20,42 +20,44 @@ const ScrollToTopButton = () => {
   };
 
   const openWhatsApp = () => {
-    window.open("https://wa.me/5511981952008", "_blank"); // Substitua pelo seu número
+    window.open("https://wa.me/5511981952008", "_blank");
   };
 
   return (
     <>
-      <section>
-        {/* Botão WhatsApp com balão "FALE CONOSCO" */}
-        <div
-          style={{
-            position: "fixed",
-            bottom: "10px",
-            right: "10px",
-            zIndex: 9000,
-            display: "flex",
-            alignItems: "center",
-            gap: "8px",
-          }}
-        >
-          {/* Botão WhatsApp */}
-          <button
-            onClick={openWhatsApp}
+      {isScrollVisible && (
+        <section>
+          {/* Botão WhatsApp + Scroll-to-top visível apenas quando scroll passou de 300px */}
+          <div
             style={{
-              backgroundColor: "transparent",
-              border: "none",
-              cursor: "pointer",
+              position: "fixed",
+              bottom: "10px",
+              right: "10px",
               zIndex: 9000,
+              display: "flex",
+              alignItems: "center",
+              gap: "8px",
             }}
-            aria-label="WhatsApp"
-            className="whatsapp-btn"
           >
-            <img src="/logos/whatsapp.svg" className="logo" alt="Dulaso logo" />
-          </button>
-        </div>
+            <button
+              onClick={openWhatsApp}
+              style={{
+                backgroundColor: "transparent",
+                border: "none",
+                cursor: "pointer",
+                zIndex: 9000,
+              }}
+              aria-label="WhatsApp"
+              className="whatsapp-btn"
+            >
+              <img
+                src="/logos/whatsapp.svg"
+                className="logo"
+                alt="Dulaso logo"
+              />
+            </button>
+          </div>
 
-        {/* Botão Scroll para o Topo */}
-        {isScrollVisible && (
           <button
             onClick={scrollToTop}
             style={{
@@ -79,8 +81,8 @@ const ScrollToTopButton = () => {
               }}
             />
           </button>
-        )}
-      </section>
+        </section>
+      )}
     </>
   );
 };

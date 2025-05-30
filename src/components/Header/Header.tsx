@@ -118,6 +118,7 @@ export default function Header() {
                 height: "60px",
                 fontSize: "24px",
                 width: "34px",
+                marginBottom: "7px",
               }}
             />
 
