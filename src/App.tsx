@@ -12,20 +12,6 @@ import Experts from "./components/Experts/Experts.tsx";
 import Projects from "./components/Projects/Projects.tsx";
 
 export default function App() {
-  useEffect(() => {
-    const isMobile = /Mobi|Android|iPhone|iPad|iPod|Windows Phone/i.test(
-      navigator.userAgent
-    );
-
-    if (isMobile) {
-      const interval = setInterval(() => {
-        window.location.reload();
-      }, 60000); // 60.000 ms = 1 minuto
-
-      return () => clearInterval(interval); // limpa o intervalo se o componente desmontar
-    }
-  }, []);
-
   return (
     <>
       <Header />
