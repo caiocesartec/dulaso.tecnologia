@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import "./App.css";
 import Header from "./components/Header/Header.tsx";
 import DisplayCall from "./components/DisplayCall/DisplayCall.tsx";
