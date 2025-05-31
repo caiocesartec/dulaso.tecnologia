@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
 import "./Header.css";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import {
+  faWhatsapp,
+  faFacebook,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Header() {
@@ -100,12 +104,30 @@ export default function Header() {
   const openWhatsApp = () => {
     window.open("https://wa.me/5511981952008", "_blank");
   };
-
+  const openInstagram = () => {
+    window.open("https://www.instagram.com/dulaso.tecnologia/", "_blank");
+  };
   return (
     <header className="headerPrincipal">
       <section className="headerActionButtons">
         {isMobile && (
           <>
+            <FontAwesomeIcon
+              icon={faInstagram}
+              onClick={openInstagram}
+              style={{
+                backgroundColor: "transparent",
+                border: "none",
+                cursor: "pointer",
+                zIndex: 9000,
+                color: "#04f46b",
+                height: "60px",
+                fontSize: "24px",
+                width: "34px",
+                marginBottom: "7px",
+                marginLeft: "20px",
+              }}
+            />
             <FontAwesomeIcon
               icon={faWhatsapp}
               onClick={openWhatsApp}
@@ -119,9 +141,9 @@ export default function Header() {
                 fontSize: "24px",
                 width: "34px",
                 marginBottom: "7px",
+                marginLeft: "20px",
               }}
             />
-
             <button
               onClick={() => setIsNavOpen((prev) => !prev)}
               style={{
