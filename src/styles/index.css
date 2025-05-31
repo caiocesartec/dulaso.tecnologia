@@ -19,6 +19,7 @@ body {
   place-items: center;
   min-width: 320px;
 
+  border: solid 2px white;
   background-color: #171910
 }
 
