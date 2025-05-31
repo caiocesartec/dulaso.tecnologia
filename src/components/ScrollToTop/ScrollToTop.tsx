@@ -19,69 +19,37 @@ const ScrollToTopButton = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const openWhatsApp = () => {
-    window.open("https://wa.me/5511981952008", "_blank");
-  };
-
   return (
     <>
       {isScrollVisible && (
-        <section>
-          {/* Botão WhatsApp + Scroll-to-top visível apenas quando scroll passou de 300px */}
-          <div
-            style={{
-              position: "fixed",
-              bottom: "10px",
-              right: "10px",
-              zIndex: 9000,
-              display: "flex",
-              alignItems: "center",
-              gap: "8px",
-            }}
-          >
+        <>
+          <p className="barHeader"></p>
+          <section>
             <button
-              onClick={openWhatsApp}
+              onClick={scrollToTop}
               style={{
+                position: "fixed",
+                bottom: "25px",
+                right: "11px",
                 backgroundColor: "transparent",
                 border: "none",
                 cursor: "pointer",
-                zIndex: 9000,
+                zIndex: 1000,
               }}
-              aria-label="WhatsApp"
-              className="whatsapp-btn"
+              aria-label="Voltar ao topo"
+              className="scroll-to-top-btn"
             >
-              <img
-                src="/logos/whatsapp.svg"
-                className="logo"
-                alt="Dulaso logo"
+              <FontAwesomeIcon
+                icon={faArrowCircleUp}
+                style={{
+                  color: "white",
+                  fontSize: "48px",
+                  animation: "floatUpDown 1.5s ease-in-out infinite",
+                }}
               />
             </button>
-          </div>
-
-          <button
-            onClick={scrollToTop}
-            style={{
-              position: "fixed",
-              bottom: "75px", // acima do WhatsApp
-              right: "11px",
-              backgroundColor: "transparent",
-              border: "none",
-              cursor: "pointer",
-              zIndex: 1000,
-            }}
-            aria-label="Voltar ao topo"
-            className="scroll-to-top-btn"
-          >
-            <FontAwesomeIcon
-              icon={faArrowCircleUp}
-              style={{
-                color: "white",
-                fontSize: "48px",
-                animation: "floatUpDown 1.5s ease-in-out infinite",
-              }}
-            />
-          </button>
-        </section>
+          </section>
+        </>
       )}
     </>
   );

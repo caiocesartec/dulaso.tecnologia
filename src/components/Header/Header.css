@@ -95,16 +95,24 @@
     padding-bottom: 0;
     padding-top: 20px;
     padding-bottom: 20px;
+    z-index: 9999;
   }
 
   .headerPrincipal .subHeader {
     display: flex;
     justify-content: center;
     height: auto;
+    z-index: 9999;
+    position: relative;
+    background-color: #171910;
+    width: 100%;
   }
   .navMenu.open {
     margin-top: 30px;
   }
+  /* .headerPrincipal nav {
+    margin-top: 31px;
+  } */
   .headerPrincipal nav ul {
     flex-direction: column;
     text-align: center;
@@ -112,14 +120,11 @@
     padding-top: 20px;
   }
   .headerPrincipal nav ul li p {
-    line-height: 20px;
+    line-height: 33px;
     padding-bottom: 5px;
-    font-size: 30px;
+    font-size: 37px;
   }
   .headerPrincipal nav ul li {
     width: 100%;
-  }
-  .headerPrincipal nav ul li p {
-    font-size: 25px;
   }
 }

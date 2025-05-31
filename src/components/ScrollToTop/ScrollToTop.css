@@ -1,3 +1,9 @@
-.whatsapp-btn img {
-  width: 50px;
+.barHeader {
+  width: 100%;
+  display: block;
+  height: 1px;
+  position: fixed;
+  top: 79px;
+  border-bottom: solid 3px white;
+  z-index: 999999;
 }
