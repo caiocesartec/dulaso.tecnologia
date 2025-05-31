@@ -6,7 +6,6 @@
   min-height: 60vh;
   display: flex;
   justify-content: center;
-  border-top: solid 2px white;
 }
 
 .displayCallFull img {
@@ -14,6 +13,33 @@
   max-width: 170px;
   height: auto;
 }
+
+.typing-text {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+  width: 0;
+  margin-top: 20px;
+  animation: typing 2s steps(12, end), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 12ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 @media (max-width: 768px) {
   .displayCallFull {
     color: #09bd54;
