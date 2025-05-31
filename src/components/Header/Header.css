@@ -6,6 +6,7 @@
   height: 76px;
   padding-top: 3px;
   padding-bottom: 3px;
+  border-top: solid white 2px;
 }
 
 .headerPrincipal nav {
