@@ -18,7 +18,8 @@
     color: #09bd54;
     background-color: #171910;
     width: 100%;
-    height: 60vh;
+    height: 90vh;
+    min-height: auto;
     margin-top: 0px;
   }
   .displayCallFull a {
