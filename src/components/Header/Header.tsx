@@ -1,7 +1,12 @@
 import { useEffect, useState } from "react";
 import "./Header.css";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { faWhatsapp, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import {
+  faWhatsapp,
+  faInstagram,
+  faFacebook,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Header() {
@@ -110,6 +115,38 @@ export default function Header() {
           <>
             <FontAwesomeIcon
               icon={faWhatsapp}
+              onClick={openWhatsApp}
+              style={{
+                backgroundColor: "transparent",
+                border: "none",
+                cursor: "pointer",
+                zIndex: 9000,
+                color: "#04f46b",
+                height: "60px",
+                fontSize: "24px",
+                width: "34px",
+                marginBottom: "7px",
+                marginLeft: "27px",
+              }}
+            />
+            <FontAwesomeIcon
+              icon={faFacebook}
+              onClick={openWhatsApp}
+              style={{
+                backgroundColor: "transparent",
+                border: "none",
+                cursor: "pointer",
+                zIndex: 9000,
+                color: "#04f46b",
+                height: "60px",
+                fontSize: "24px",
+                width: "34px",
+                marginBottom: "7px",
+                marginLeft: "27px",
+              }}
+            />
+            <FontAwesomeIcon
+              icon={faYoutube}
               onClick={openWhatsApp}
               style={{
                 backgroundColor: "transparent",
