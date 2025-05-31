@@ -9,7 +9,6 @@ export default function DisplayCall() {
           className="logo"
           alt="Dulaso logo"
         />
-        <div className="typing-text">Vamos Juntos</div>
       </main>
     </>
   );
