@@ -149,7 +149,7 @@ export default function Header() {
                 border: "none",
                 cursor: "pointer",
                 zIndex: 9000,
-                marginLeft: "23px",
+                marginLeft: "20px",
                 marginRight: "16px",
                 height: "60px",
               }}
