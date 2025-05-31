@@ -93,9 +93,8 @@
     position: fixed;
     padding-top: 0;
     padding-bottom: 0;
-    padding-top: 13px;
-    padding-bottom: 10px;
-    border-top: solid 2px white;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .headerPrincipal .subHeader {
@@ -104,7 +103,7 @@
     height: auto;
   }
   .navMenu.open {
-    margin-top: 21px;
+    margin-top: 30px;
   }
   .headerPrincipal nav ul {
     flex-direction: column;

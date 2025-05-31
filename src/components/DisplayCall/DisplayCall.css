@@ -6,6 +6,14 @@
   min-height: 60vh;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 83px;
+}
+.displayCallFull .typing-container {
+  margin-top: 20px;
+  font-size: 25px;
+  color: white;
 }
 
 .displayCallFull img {
@@ -19,12 +27,17 @@
     color: #09bd54;
     background-color: #171910;
     width: 100%;
-    height: 500px;
+    height: 540px;
     min-height: auto;
     margin-top: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .displayCallFull .typing-container {
+    font-size: 25px;
+    color: white;
+    margin-top: 30px;
   }
   .displayCallFull a {
     display: flex;
