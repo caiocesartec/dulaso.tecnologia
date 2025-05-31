@@ -105,63 +105,63 @@ export default function Header() {
   };
   return (
     <header className="headerPrincipal">
-      <section className="headerActionButtons">
-        {isMobile && (
-          <>
-            <FontAwesomeIcon
-              icon={faWhatsapp}
-              onClick={openWhatsApp}
-              style={{
-                backgroundColor: "transparent",
-                border: "none",
-                cursor: "pointer",
-                zIndex: 9000,
-                color: "#04f46b",
-                height: "60px",
-                fontSize: "24px",
-                width: "34px",
-                marginBottom: "7px",
-                marginLeft: "27px",
-              }}
-            />
-
-            <FontAwesomeIcon
-              icon={faInstagram}
-              onClick={openInstagram}
-              style={{
-                backgroundColor: "transparent",
-                border: "none",
-                cursor: "pointer",
-                zIndex: 9000,
-                color: "#04f46b",
-                height: "60px",
-                fontSize: "24px",
-                width: "34px",
-                marginBottom: "7px",
-                marginLeft: "27px",
-              }}
-            />
-
-            <button
-              onClick={() => setIsNavOpen((prev) => !prev)}
-              style={{
-                backgroundColor: "transparent",
-                border: "none",
-                cursor: "pointer",
-                zIndex: 9000,
-                marginLeft: "20px",
-                marginRight: "16px",
-                height: "60px",
-              }}
-              aria-label="Menu"
-            >
+      <section className="subHeader">
+        <section className="headerActionButtons">
+          {isMobile && (
+            <>
               <FontAwesomeIcon
-                icon={isNavOpen ? faXmark : faBars}
-                style={{ color: "#04F46B", fontSize: "34px" }}
+                icon={faWhatsapp}
+                onClick={openWhatsApp}
+                style={{
+                  backgroundColor: "transparent",
+                  border: "none",
+                  cursor: "pointer",
+                  zIndex: 9000,
+                  color: "#04f46b",
+                  height: "39px",
+                  fontSize: "24px",
+                  width: "34px",
+                  marginLeft: "27px",
+                }}
               />
-            </button>
-          </>
-        )}
+
+              <FontAwesomeIcon
+                icon={faInstagram}
+                onClick={openInstagram}
+                style={{
+                  backgroundColor: "transparent",
+                  border: "none",
+                  cursor: "pointer",
+                  zIndex: 9000,
+                  color: "#04f46b",
+                  height: "39px",
+                  fontSize: "24px",
+                  width: "34px",
+                  marginLeft: "27px",
+                }}
+              />
+
+              <button
+                onClick={() => setIsNavOpen((prev) => !prev)}
+                style={{
+                  backgroundColor: "transparent",
+                  border: "none",
+                  cursor: "pointer",
+                  zIndex: 9000,
+                  marginLeft: "20px",
+                  marginRight: "16px",
+                  height: "39px",
+                }}
+                aria-label="Menu"
+              >
+                <FontAwesomeIcon
+                  icon={isNavOpen ? faXmark : faBars}
+                  style={{ color: "#04F46B", fontSize: "34px" }}
+                />
+              </button>
+            </>
+          )}
+        </section>
       </section>
 
       <nav className={`navMenu ${isNavOpen || !isMobile ? "open" : ""}`}>

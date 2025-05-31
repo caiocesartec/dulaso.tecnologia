@@ -14,6 +14,7 @@
   margin: 0 auto;
   width: 100%;
   border-top: solid white 2px;
+  border-bottom: solid white 2px;
 }
 
 .headerPrincipal nav ul {
@@ -69,17 +70,13 @@
 .navMenu.open {
   max-height: 500px; /* ajuste conforme o conteúdo */
   opacity: 1;
+  margin-top: 25px;
 }
 
 .headerActionButtons {
   text-align: right;
   display: flex;
   justify-content: end;
-}
-
-/* Exemplo de estilos existentes */
-.headerPrincipal {
-  position: relative;
 }
 
 .navButton {
@@ -93,8 +90,17 @@
 
 @media (max-width: 1024px) {
   .headerPrincipal {
-    height: 60px;
+    height: auto;
     position: fixed;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .headerPrincipal .subHeader {
+    display: flex;
+    justify-content: center;
+    height: auto;
   }
 
   .headerPrincipal nav ul {
