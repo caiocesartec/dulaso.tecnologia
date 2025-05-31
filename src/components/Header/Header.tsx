@@ -109,22 +109,6 @@ export default function Header() {
         {isMobile && (
           <>
             <FontAwesomeIcon
-              icon={faInstagram}
-              onClick={openInstagram}
-              style={{
-                backgroundColor: "transparent",
-                border: "none",
-                cursor: "pointer",
-                zIndex: 9000,
-                color: "#04f46b",
-                height: "60px",
-                fontSize: "24px",
-                width: "34px",
-                marginBottom: "7px",
-                marginLeft: "20px",
-              }}
-            />
-            <FontAwesomeIcon
               icon={faWhatsapp}
               onClick={openWhatsApp}
               style={{
@@ -137,9 +121,26 @@ export default function Header() {
                 fontSize: "24px",
                 width: "34px",
                 marginBottom: "7px",
-                marginLeft: "20px",
+                marginLeft: "27px",
               }}
             />
+            <FontAwesomeIcon
+              icon={faInstagram}
+              onClick={openInstagram}
+              style={{
+                backgroundColor: "transparent",
+                border: "none",
+                cursor: "pointer",
+                zIndex: 9000,
+                color: "#04f46b",
+                height: "60px",
+                fontSize: "24px",
+                width: "34px",
+                marginBottom: "7px",
+                marginLeft: "27px",
+              }}
+            />
+
             <button
               onClick={() => setIsNavOpen((prev) => !prev)}
               style={{
