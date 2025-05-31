@@ -1,11 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Header.css";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import {
-  faWhatsapp,
-  faFacebook,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+import { faWhatsapp, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Header() {
