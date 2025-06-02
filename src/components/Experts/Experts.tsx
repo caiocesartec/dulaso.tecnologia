@@ -89,6 +89,14 @@ export default function Experts() {
             <h4>E-commerce - Sites</h4>
           </section>
         </SwiperSlide>
+
+        <SwiperSlide style={{ width: "auto" }}>
+          <section>
+            <img src="/experts/bax.jpg" className="logo" alt="Daniel" />
+            <h3>Daniel</h3>
+            <h4>Designer - UX</h4>
+          </section>
+        </SwiperSlide>
       </Swiper>
     </section>
   );
