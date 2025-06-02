@@ -92,7 +92,7 @@ export default function Experts() {
 
         <SwiperSlide style={{ width: "auto" }}>
           <section>
-            <img src="/experts/bax.jpg" className="logo" alt="Daniel" />
+            <img src="/experts/bax.png" className="logo" alt="Daniel" />
             <h3>Daniel</h3>
             <h4>Designer - UX</h4>
           </section>
