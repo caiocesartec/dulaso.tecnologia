@@ -57,6 +57,17 @@ export default function Experts() {
         <SwiperSlide style={{ width: "auto" }}>
           <section>
             <img
+              src="/experts/gui.png"
+              className="expertFoto"
+              alt="Guilherme"
+            />
+            <h3>Guilherme</h3>
+            <h4>Sites</h4>
+          </section>
+        </SwiperSlide>
+        <SwiperSlide style={{ width: "auto" }}>
+          <section>
+            <img
               src="/experts/vini.jpg"
               className="expertFoto"
               alt="Vinicius S. Alves"
