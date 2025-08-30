@@ -9,22 +9,19 @@ import {
   faCartShopping,
 } from "@fortawesome/free-solid-svg-icons";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules"; 
+import { Pagination, Navigation } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 
 export default function ServicesWeb() {
   return (
     <section className="servicesSection">
       <section className="servicesSectionContainer">
-         <img
-              src="ico-swipe.png"
-              className="animate-blink-bounce"
-            />
+
         <section className="box box-web">
-          
+
           <div className="service-title">
           </div>
-           
+
           <ul>
             <Swiper
               slidesPerView={2}
@@ -57,7 +54,12 @@ export default function ServicesWeb() {
                     icon={faRocket}
                     style={{ color: "#04F46B", fontSize: "34px" }}
                   />
-                  <strong>Sites / Landing Pages</strong> Ter um site é como
+                  <strong>Sites / Landing Pages         
+                    <img
+                      src="ico-swipe.png"
+                      className="animate-blink-bounce"
+                    />
+                  </strong> Ter um site é como
                   abrir as portas da sua empresa para o mundo. Ele aumenta sua
                   presença online, transmite profissionalismo e facilita o
                   contato com clientes. Além disso, funciona 24h por dia,
