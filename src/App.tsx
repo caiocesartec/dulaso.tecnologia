@@ -26,7 +26,7 @@ export default function App() {
       <TitleBar titulo="Serviços" />
       <Services />
       
-      <TitleBar titulo="Marketing Digital" />
+      <TitleBar titulo="MKT Digital" />
       <ServicesWeb />
 
       <TitleBar titulo="Especialistas" />
