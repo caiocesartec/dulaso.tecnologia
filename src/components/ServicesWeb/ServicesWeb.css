@@ -105,13 +105,13 @@
     transform: rotate(0deg);
   }
   15% {
-    transform: rotate(20deg);
+    transform: rotate(30deg);
   }
   30% {
-    transform: rotate(-20deg);
+    transform: rotate(-30deg);
   }
   45% {
-    transform: rotate(20px);
+    transform: rotate(30px);
   }
   60% {
     transform: rotate(0deg);
@@ -124,7 +124,7 @@
 
 .animate-blink-bounce {
   display: none!important;
-  width: 40px;
+  width: 50px;
   position: absolute;
   right: 10px;
   top: 30px;
