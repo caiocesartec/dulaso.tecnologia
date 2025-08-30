@@ -5,6 +5,7 @@ import TitleBar from "./components/TitleBar/TitleBar.tsx";
 import About from "./components/About/About.tsx";
 import Goods from "./components/Goods/Goods.tsx";
 import Services from "./components/Services/Services.tsx";
+import ServicesWeb from "./components/ServicesWeb/ServicesWeb.tsx";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop.tsx";
 import Footer from "./components/Footer/Footer.tsx";
 import Experts from "./components/Experts/Experts.tsx";
@@ -24,6 +25,9 @@ export default function App() {
 
       <TitleBar titulo="Serviços" />
       <Services />
+      
+      <TitleBar titulo="Marketing Digital" />
+      <ServicesWeb />
 
       <TitleBar titulo="Especialistas" />
       <Experts />

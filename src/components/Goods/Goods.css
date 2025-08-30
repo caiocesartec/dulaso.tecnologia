@@ -29,8 +29,8 @@
   letter-spacing: 2px;
   line-height: 30px;
   font-size: 22px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 .goodsSection .box strong {
   color: #04f46b;
@@ -64,8 +64,8 @@
   font-style: normal;
   transform: translateY(4px);
   letter-spacing: 3px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 /* swiper slider */
@@ -79,5 +79,5 @@
   color: #04f46b;
   width: 10px !important;
   font-size: 3px !important;
-  display: none !important;
+  top: 52% !important;
 }

@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation, Autoplay } from "swiper/modules"; // Importa Autoplay
+import { Pagination, Navigation } from "swiper/modules"; // Importa Autoplay
 import "swiper/swiper-bundle.css";
 
 const Goods: React.FC = () => {
@@ -17,10 +17,6 @@ const Goods: React.FC = () => {
         slidesPerView={2}
         centeredSlides={true}
         spaceBetween={30}
-        autoplay={{
-          delay: 4000, // tempo entre os slides (ms)
-          disableOnInteraction: true, // continua mesmo após interação
-        }}
         pagination={{
           clickable: true,
         }}
@@ -38,7 +34,7 @@ const Goods: React.FC = () => {
             centeredSlides: true,
           },
         }}
-        modules={[Pagination, Navigation, Autoplay]} // Inclui Autoplay
+        modules={[Pagination, Navigation]} // Inclui Autoplay
         className="mySwiper"
       >
         <SwiperSlide>
@@ -104,9 +100,6 @@ const Goods: React.FC = () => {
         </SwiperSlide>
       </Swiper>
 
-      {/* Botões de navegação */}
-      <div className="swiper-button-prev" />
-      <div className="swiper-button-next" />
     </section>
   );
 };
