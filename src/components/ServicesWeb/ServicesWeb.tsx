@@ -48,17 +48,19 @@ export default function ServicesWeb() {
               modules={[Pagination, Navigation]}
               className="mySwiper"
             >
+                 <img
+                      src="ico-swipe.png"
+                      className="animate-blink-bounce"
+                    />
               <SwiperSlide>
                 <li>
                   <FontAwesomeIcon
                     icon={faRocket}
                     style={{ color: "#04F46B", fontSize: "34px" }}
                   />
+                
                   <strong>Sites / Landing Pages         
-                    <img
-                      src="ico-swipe.png"
-                      className="animate-blink-bounce"
-                    />
+                   
                   </strong> Ter um site é como
                   abrir as portas da sua empresa para o mundo. Ele aumenta sua
                   presença online, transmite profissionalismo e facilita o
