@@ -20,8 +20,8 @@
   margin: 0 auto;
   display: block;
   width: 100%;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 
@@ -68,7 +68,7 @@
   display: block;
   text-align: center;
   line-height: 40px;
-  font-size: 35px;
+  font-size: 30px;
   letter-spacing: 10px;
   color: white;
   text-decoration: none;
@@ -124,7 +124,7 @@
 
 .animate-blink-bounce {
   display: none!important;
-  width: 50px;
+  width: 30px;
   position: absolute;
   right: 20px;
   margin-top: 20px;
